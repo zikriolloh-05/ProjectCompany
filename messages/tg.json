@@ -1,0 +1,59 @@
+{
+    "HomePage": {
+        "welcome": "Хуш омадед ба Idea reality",
+        "description": "IT-е ки ҳамеша барои шумо кор мекунад",
+        "ostavitZayafku": "Дархост гузоред",
+        "textModal": "Барои муҳокимаи тафсилоти лоиҳаи шумо бо шумо тамос мегирем.",
+        "vveditVasheImya": "Номи худро ворид кунед",
+        "numberPhone": "рақами мобилӣ",
+        "vvediteEmail": "почтаи электронии худро ворид кунед",
+        "home:inputRequired": "Ворид кардан ҳатмист",
+        "home:EntenIdea": "Идеяи худро кутоҳ нависед",
+        "home:EnterOk": "фиристодан",
+        "home:EnterCancell": "бекор кардан"
+    },
+    "Navigation": {
+        "home": "Асоси",
+        "about": "дар бораи мо"
+    },
+    "AboutPage": {
+        "about_text": "Ширкати мо ҳамеша омода аст, ки дархостҳои мардумро қабул кунад, мо танҳо барои хизматрасонӣ ба мардум кор мекунем. Ҳар гуна барномае, ки дар фикри шумо ҳаст, мо онро таҳия намуда, дар амал татбиқ мекунем!",
+        "about_text2": "Мо технологияҳои рақамиро эҷод мекунем",
+        "about_text3": "Шарики боэътимоди шумо дар ҷаҳони технологияҳои иттилоотӣ",
+        "about_text4": "Дар бораи ширкат",
+        "about_text5": "Афзалиятҳои мо",
+        "about_text6": "Муносибати инфиродӣ ба ҳар муштарӣ",
+        "about_text7": "Технологияҳои муосир ва методологияҳо",
+        "about_text8": "Кафолати сифат ва мӯҳлатҳо",
+        "about_text9": "Дастгирии 24/7",
+        "about_text10": "Лоиҳаҳо",
+        "about_text11": "Муштариён",
+        "about_text12": "Қаноатмандӣ",
+        "about_text13": "Дастгирӣ",
+        "about_text14": "Вазифаи мо — табдил додани идеяҳо ба маҳсулоти корӣ мебошад, ки ҳаёти одамонро беҳтар ва тиҷоратро самараноктар мегардонад.",
+        "about_text15": "Дастаи IT Support",
+        "about_text16": "Шарики боэътимоди шумо"
+    },
+    "VacancyPagy": {
+        "vacancy_slova": "Ҷойи кор"
+    },
+    "PortfolioPage": {
+        "Portfolio_text": "Портфолио",
+        "Portfolio:BtnDemo": "Демо",
+        "Portfolio:Github": "ГитХаб"
+    },
+    "ServicesPage": {
+        "Services:text": "Хизматрасонӣ",
+        "Services:WebDevelopment": "Таҳияи веб",
+        "Services:BackendDevelopment": "Таҳияи Бэкенд"
+    },
+    "Footer_f": {
+        "footer_contact": "Тамос",
+        "footer_nashsakampaniya": "Ширкат",
+        "footer:AllRightsReserved": "© 2026.Ҳамаи ҳуқуқ маҳфуз аст.",
+        "footer:phrase": "Зуд. Тоза. Профессионал."
+    },
+    "Projects": {
+        "projects:text": "Лоиҳаҳо"
+    }
+}

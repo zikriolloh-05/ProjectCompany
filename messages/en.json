@@ -1,0 +1,57 @@
+{
+    "HomePage": {
+        "welcome": "Welcome to Idea reality",
+        "description": "it which always works for you.",
+        "ostavitZayafku": "Leave a request",
+        "textModal": "We will contact you to discuss your project details.",
+        "vveditVasheImya": "Enter your name",
+        "numberPhone": "Phone number",
+        "vvediteEmail": "Enter your Email",
+        "home:inputRequired":"Required field",
+        "home:EntenIdea":"Briefly about the idea",
+        "home:EnterOk":"Send",
+        "home:EnterCancell":"Cancell"
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About"
+    },
+    "AboutPage": {
+        "about_text": "Our company is always ready to receive requests from people, we work solely to serve people. Any application you have in mind, we will develop it and implement it in practice!",
+        "about_text2":"We create digital solutions",
+        "about_text3":"Your reliable partner in the world of information technology",
+        "about_text4":"About the company",
+        "about_text5":"Our advantages",
+        "about_text6":"Individual approach to each client",
+        "about_text7":"Modern technologies and methodologies",
+        "about_text8":"Quality and deadline guarantee",
+        "about_text9":"24/7 support",
+        "about_text10":"Projects",
+        "about_text11":"Clients",
+        "about_text12":"Satisfaction",
+        "about_text13":"Support",
+        "about_text14":"Our mission is to transform ideas into working products that make people's lives better and businesses more efficient.",
+        "about_text15":"IT Support Team",
+        "about_text16":"Your reliable partner"
+
+    },
+    "PortfolioPage": {
+        "Portfolio_text": "Portfolio",
+        "Portfolio:BtnDemo": "Demo",
+        "Portfolio:Github": "GitHub"
+    },
+    "ServicesPage": {
+        "Services:text": "Services",
+        "Services:WebDevelopment": "Web development",
+        "Services:BackendDevelopment": "Backend development"
+    },
+    "Footer_f": {
+        "footer_contact": "Contact",
+        "footer_nashsakampaniya": "Office",
+        "footer:AllRightsReserved": "© 2026 . All rights reserved.",
+        "footer:phrase": "Fast. Clear. Professional."
+    },
+    "Projects":{
+        "projects:text":"Projects"
+    }
+}

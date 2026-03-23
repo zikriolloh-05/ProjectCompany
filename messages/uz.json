@@ -1,0 +1,32 @@
+{
+    "HomePage": {
+        "welcome": "Менинг Idea reality хуш келибсиз.",
+        "description": "IT bu har doim siz uchun ishlaydi",
+        "ostavitZayafku": "So'rov qoldiring",
+        "textModal": "Loyihangizning tafsilotlarini muhokama qilish uchun siz bilan aloqaga chiqamiz.",
+        "vveditVasheImya": "Ismingizni kiriting",
+        "numberPhone": "telefon raqami",
+        "vvediteEmail": "elektron pochtangizni kiriting"
+    },
+    "Navigation": {
+        "home": "asosiy",
+        "about": "Kompaniya haqida"
+    },
+    "AboutPage": {
+        "about_text": "Бизнинг компаниямиз одамлардан сўровларни қабул қилиш учун ҳамеша тайёр, биз фақат одамларга хизмат кўрсатиш учун ишлаймиз. Сизнинг фикрингиздаги ҳар қандай иловани биз ишлаб чиқамиз ва амалда қўллаймиз!"
+    },
+    "VacancyPagy": {
+        "vacancy_slova": "vakansiya"
+    },
+    "PortfolioPage": {
+        "Portfolio_text": "portfel"
+    },
+    "Contact_page": {
+        "contact_text": "aloqa"
+    },
+    "Footer_f": {
+        "footer_page": "Мо дар шабакаҳои иҷтимоӣ",
+        "footer_contact": "Тамос",
+        "footer_nashsakampaniya": "nasha kampaniya"
+    }
+}

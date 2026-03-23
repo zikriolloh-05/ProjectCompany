@@ -1,0 +1,68 @@
+/* styles/theme.css */
+body.light-theme {
+  /* Светлая тема (по умолчанию) */
+  --theme-background: #ffffff;
+  --theme-text: white;
+  --theme-textSecondary: #666666;
+  --theme-navBackground: rgba(255, 255, 255, 0.95);
+  --theme-navText: white;
+  --theme-navHover: #1890ff;
+  --theme-buttonBackground: #f0f0f0;
+  --theme-buttonText: #000000;
+  --theme-buttonHover: #e0e0e0;
+  --theme-cardBackground: #f9f9f9;
+  --theme-cardBorder: #e8e8e8;
+  --theme-sectionBackground: #f5f5f5;
+  --theme-sectionAlternate: #fafafa;
+  --theme-accent: #1890ff;
+  --theme-accentHover: #40a9ff;
+  --theme-border: #d9d9d9;
+  --theme-borderLight: #f0f0f0;
+  --theme-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --theme-success: #52c41a;
+  --theme-warning: #faad14;
+  --theme-error: #f5222d;
+  --theme-languageButtonBg: rgba(0, 0, 0, 0.1);
+  --theme-languageButtonText: white;
+  --theme-dotIcon: #000000;
+  --theme-footerBackground: #f5f5f5;
+  --theme-footerText: #333333;
+  --theme-modalBackground: #ffffff;
+  --theme-modalText: #111a2c;
+  --theme-inputBackground: #ffffff;
+  --theme-inputBorder: #d9d9d9;
+}
+
+/* Темная тема */
+body.dark-theme {
+  --theme-background: #111a2c;
+  --theme-text: #e6f4ff;
+  --theme-textSecondary: #a6a6a6;
+  --theme-navBackground: #111a2c;
+  --theme-navText: #ffffff;
+  --theme-navHover: #177ddc;
+  --theme-buttonBackground: #111a2c;
+  --theme-buttonText: #ffffff;
+  --theme-buttonHover: #2c2c2c;
+  --theme-cardBackground:#111a2c;
+  --theme-cardBorder: #303030;
+  --theme-sectionBackground: white;
+  --theme-sectionAlternate: #111a2c;
+  --theme-accent: #177ddc;
+  --theme-accentHover: #3c9ae8;
+  --theme-border: #303030;
+  --theme-borderLight: #262626;
+  --theme-shadow: 0 2px 8px #111a2c;
+  --theme-success: #49aa19;
+  --theme-warning: #d89614;
+  --theme-error: #dc4446;
+  --theme-languageButtonBg:#111a2c;
+  --theme-languageButtonText: #ffffff;
+  --theme-dotIcon: #ffffff;
+  --theme-footerBackground: #111a2c;
+  --theme-footerText: #ffffff;
+  --theme-modalBackground: #111a2c;
+  --theme-modalText: #ffffff;
+  --theme-inputBackground: #efe9e9c4;
+  --theme-inputBorder: #404040;
+}

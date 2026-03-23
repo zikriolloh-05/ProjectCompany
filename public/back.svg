@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background rgb(18, 18, 125) -->
+    <rect width="800" height="600" fill="rgb(79, 169, 214)"/>
+    
+    <!-- Декоративные элементы фона (блок схемы) -->
+    <g opacity="0.">
+        <!-- Линии сетки -->
+        <path d="M100 100 L700 100" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M100 200 L700 200" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M100 300 L700 300" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M100 400 L700 400" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M100 500 L700 500" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        
+        <!-- Вертикальные линии -->
+        <path d="M200 50 L200 550" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M300 50 L300 550" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M400 50 L400 550" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M500 50 L500 550" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        <path d="M600 50 L600 550" stroke="white" stroke-width="2" stroke-dasharray="10 10"/>
+        
+        <!-- Круги (блоки) -->
+        <circle cx="250" cy="150" r="30" stroke="white" stroke-width="3" fill="none"/>
+        <circle cx="550" cy="450" r="40" stroke="white" stroke-width="3" fill="none"/>
+        <circle cx="650" cy="250" r="25" stroke="white" stroke-width="3" fill="none"/>
+        
+        <!-- Соединительные линии (блок схемы) -->
+        <path d="M250 180 L250 250 L350 250" stroke="white" stroke-width="3" fill="none"/>
+        <path d="M550 490 L550 550 L450 550" stroke="white" stroke-width="3" fill="none"/>
+    </g>
+    
+    <!-- Ноутбук -->
+    <g transform="translate(200, 150)">
+        <!-- Нижняя часть ноутбука (основа) -->
+        <rect x="0" y="200" width="400" height="30" rx="5" fill="#2C3E50"/>
+        <rect x="50" y="210" width="300" height="15" rx="3" fill="#34495E"/>
+        
+        <!-- Верхняя часть (крышка/экран) -->
+        <rect x="20" y="0" width="360" height="200" rx="15" fill="#1E2B3A" stroke="#4A5568" stroke-width="3"/>
+        
+        <!-- Экран ноутбука (светлый фон) -->
+        <rect x="40" y="20" width="320" height="160" rx="8" fill="blue"/>
+        
+        <!-- Символ </> внутри экрана -->
+        <text x="200" y="100" font-family="monospace" font-size="72" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">&lt;/&gt;</text>
+        
+        <!-- Рамка экрана -->
+        <rect x="40" y="20" width="320" height="160" rx="8" fill="none" stroke="#2C3E50" stroke-width="2"/>
+    </g>
+    
+    <!-- Значки вокруг ноутбука -->
+    <g>
+        <!-- Значок настройки (шестеренка) слева сверху -->
+        <g transform="translate(120, 80)">
+            <circle cx="0" cy="0" r="25" fill="white" opacity="0.9"/>
+            <circle cx="0" cy="0" r="15" fill="rgb(18, 18, 125)"/>
+            <circle cx="0" cy="0" r="8" fill="white"/>
+            <!-- Зубья шестеренки -->
+            <rect x="-30" y="-5" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="20" y="-5" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="-5" y="-30" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="-5" y="20" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="-20" y="-20" width="10" height="10" rx="2" fill="white" transform="rotate(45)"/>
+            <rect x="10" y="10" width="10" height="10" rx="2" fill="white" transform="rotate(45)"/>
+            <rect x="-20" y="10" width="10" height="10" rx="2" fill="white" transform="rotate(-45)"/>
+            <rect x="10" y="-20" width="10" height="10" rx="2" fill="white" transform="rotate(-45)"/>
+        </g>
+        
+        <!-- Второй значок настройки справа сверху -->
+        <g transform="translate(680, 80)">
+            <circle cx="0" cy="0" r="25" fill="white" opacity="0.9"/>
+            <circle cx="0" cy="0" r="15" fill="rgb(18, 18, 125)"/>
+            <circle cx="0" cy="0" r="8" fill="white"/>
+            <rect x="-30" y="-5" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="20" y="-5" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="-5" y="-30" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="-5" y="20" width="10" height="10" rx="2" fill="white" transform="rotate(0)"/>
+            <rect x="-20" y="-20" width="10" height="10" rx="2" fill="white" transform="rotate(45)"/>
+            <rect x="10" y="10" width="10" height="10" rx="2" fill="white" transform="rotate(45)"/>
+            <rect x="-20" y="10" width="10" height="10" rx="2" fill="white" transform="rotate(-45)"/>
+            <rect x="10" y="-20" width="10" height="10" rx="2" fill="white" transform="rotate(-45)"/>
+        </g>
+        
+        <!-- Значок блок-схемы слева снизу -->
+        <g transform="translate(120, 520)">
+            <rect x="-30" y="-30" width="60" height="60" rx="8" fill="white" opacity="0.9"/>
+            <circle cx="0" cy="-15" r="10" fill="rgb(18, 18, 125)"/>
+            <circle cx="0" cy="15" r="10" fill="rgb(18, 18, 125)"/>
+            <circle cx="-15" cy="0" r="10" fill="rgb(18, 18, 125)"/>
+            <circle cx="15" cy="0" r="10" fill="rgb(18, 18, 125)"/>
+            <!-- Соединительные линии -->
+            <line x1="-15" y1="0" x2="0" y2="-15" stroke="white" stroke-width="3"/>
+            <line x1="0" y1="-15" x2="15" y2="0" stroke="white" stroke-width="3"/>
+            <line x1="15" y1="0" x2="0" y2="15" stroke="white" stroke-width="3"/>
+            <line x1="0" y1="15" x2="-15" y2="0" stroke="white" stroke-width="3"/>
+        </g>
+        
+        <!-- Значок блок-схемы справа снизу -->
+        <g transform="translate(680, 520)">
+            <rect x="-30" y="-30" width="60" height="60" rx="8" fill="white" opacity="0.9"/>
+            <circle cx="0" cy="-15" r="10" fill="rgb(18, 18, 125)"/>
+            <circle cx="0" cy="15" r="10" fill="rgb(18, 18, 125)"/>
+            <circle cx="-15" cy="0" r="10" fill="rgb(18, 18, 125)"/>
+            <circle cx="15" cy="0" r="10" fill="rgb(18, 18, 125)"/>
+            <line x1="-15" y1="0" x2="0" y2="-15" stroke="white" stroke-width="3"/>
+            <line x1="0" y1="-15" x2="15" y2="0" stroke="white" stroke-width="3"/>
+            <line x1="15" y1="0" x2="0" y2="15" stroke="white" stroke-width="3"/>
+            <line x1="0" y1="15" x2="-15" y2="0" stroke="white" stroke-width="3"/>
+        </g>
+    </g>
+    
+    <!-- Дополнительные маленькие символы </> вокруг -->
+    <g opacity="0.3">
+        <text x="50" y="200" font-family="monospace" font-size="24" fill="white">&lt;/&gt;</text>
+        <text x="700" y="400" font-family="monospace" font-size="24" fill="white">&lt;/&gt;</text>
+        <text x="100" y="550" font-family="monospace" font-size="24" fill="white">&lt;/&gt;</text>
+        <text x="600" y="100" font-family="monospace" font-size="24" fill="white">&lt;/&gt;</text>
+    </g>
+    
+    <!-- Добавленный текст: Backend: c#, Go, Python -->
+    <text x="400" y="550" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Backend: C#, Go, Python</text>
+</svg>

@@ -1,0 +1,47 @@
+/* components/VisitorStats.module.css */
+.statsPanel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  z-index: 10000;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+.statsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #667eea;
+  color: white;
+  min-width: 200px;
+}
+
+.statsHeader h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.closeBtn:hover {
+  background: rgba(255,255,255,0.2);
+}

@@ -1,0 +1,59 @@
+{
+    "HomePage": {
+        "welcome": "Добро пожаловать на Idea reality",
+        "description": "IT которые  работает за вас",
+        "ostavitZayafku": "Оставить заявку",
+        "textModal": "Свяжемся с вами для обсуждения деталей вашего проекта.",
+        "vveditVasheImya": "Введите свое имя",
+        "numberPhone": "номер телефона",
+        "vvediteEmail": "введите ваш Email",
+        "home:inputRequired": "Обязательное поле",
+        "home:EntenIdea": "Кратко об идее",
+        "home:EnterOk": "Отправить",
+        "home:EnterCancell": "Отмена"
+    },
+    "Navigation": {
+        "home": "Главни",
+        "about": "О нас"
+    },
+    "AboutPage": {
+        "about_text": "Наша компания всегда готова принимать запросы от людей, мы работаем исключительно для обслуживания людей. Любое приложение, которое у вас есть в мыслях, мы разработаем его и внедрим на практике!",
+        "about_text2": "Мы создаем цифровые решения",
+        "about_text3": "Ваш надежный партнер в мире информационных технологий",
+        "about_text4": "О компании",
+        "about_text5": "Наши преимущества",
+        "about_text6": "Индивидуальный подход к каждому клиенту",
+        "about_text7": "Современные технологии и методологии",
+        "about_text8": "Гарантия качества и сроков",
+        "about_text9": "Поддержка 24/7",
+        "about_text10": "Проектов",
+        "about_text11": "Клиентов",
+        "about_text12": "Удовлетворенности",
+        "about_text13": "Поддержка",
+        "about_text14": "Наша миссия — превращать идеи в работающие продукты, которые делают жизнь людей лучше и бизнес эффективнее.",
+        "about_text15": "Команда IT Support",
+        "about_text16": "Ваш надежный партнер"
+    },
+    "VacancyPagy": {
+        "vacancy_slova": "Вакансии"
+    },
+    "PortfolioPage": {
+        "Portfolio_text": "Портфолио",
+        "Portfolio:BtnDemo": "Демо",
+        "Portfolio:Github": "ГитХаб"
+    },
+    "ServicesPage": {
+        "Services:text": "Услуги",
+        "Services:WebDevelopment": "Веб-разработка",
+        "Services:BackendDevelopment": "Бэкенд-разработка"
+    },
+    "Footer_f": {
+        "footer_contact": "Контакты",
+        "footer_nashsakampaniya": "Кампания",
+        "footer:AllRightsReserved": "© 2026 . все права защищены.",
+        "footer:phrase": "Быстро. Четко. Профессионально"
+    },
+    "Projects": {
+        "projects:text": "Проекты"
+    }
+}
