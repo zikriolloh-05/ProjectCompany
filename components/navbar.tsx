@@ -346,12 +346,12 @@ const Navbar = ({ locale }: { locale: string }) => {
             backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff',
             borderBottom: `1px solid ${isDarkMode ? '#333' : '#f0f0f0'}`
           },
-          headerTitle: {
-            color: getTextColor()
-          },
-          closeIcon: {
-            color: getTextColor()
-          }
+          // headerTitle: {
+          //   color: getTextColor()
+          // },
+          // closeIcon: {
+          //   color: getTextColor()
+          // }
         }}
       >
         <div className={styles.mobileMenuContainer}>
