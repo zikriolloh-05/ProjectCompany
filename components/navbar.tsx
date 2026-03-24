@@ -269,7 +269,7 @@ const Navbar = ({ locale }: { locale: string }) => {
                   color: getTextColor(),
                   cursor: 'pointer',
                   margin: 0,
-                  padding: '8px 0',
+                  // padding: '8px 0',
                   position: 'relative',
                   zIndex: 2,
                   transition: 'all 0.3s ease'
@@ -346,12 +346,12 @@ const Navbar = ({ locale }: { locale: string }) => {
             backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff',
             borderBottom: `1px solid ${isDarkMode ? '#333' : '#f0f0f0'}`
           },
-          // headerTitle: {
-          //   color: getTextColor()
-          // },
-          // closeIcon: {
-          //   color: getTextColor()
-          // }
+          headerTitle: {
+            color: getTextColor()
+          },
+          closeIcon: {
+            color: getTextColor()
+          }
         }}
       >
         <div className={styles.mobileMenuContainer}>
@@ -363,7 +363,7 @@ const Navbar = ({ locale }: { locale: string }) => {
                 onClick={() => handleNavigation(item.id, item.key, item.isPage)}
                 style={{
                   color: getTextColor(),
-                  borderBottomColor: theme.background,
+                  borderBottomColor: theme.background
                 }}
               >
                 {item.label}
@@ -371,6 +371,8 @@ const Navbar = ({ locale }: { locale: string }) => {
             ))}
 
             <div className={styles.mobileMenuDivider} />
+
+
           </div>
         </div>
       </Drawer>

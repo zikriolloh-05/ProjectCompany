@@ -34,6 +34,7 @@ export interface ThemeColors {
   modalText: string;
   inputBackground: string;
   inputBorder: string;
+  backgroundGradient?: string;
 }
 
 // СВЕТЛАЯ ТЕМА
@@ -73,6 +74,7 @@ export const lightTheme: ThemeColors = {
 // ТЕМНАЯ ТЕМА
 export const darkTheme: ThemeColors = {
   background: '#111a2c',
+  backgroundGradient: 'linear-gradient(135deg, #111a2c 0%, #1a2a42 50%, #111a2c 100%)',
   text: 'white',
   textSecondary: '#a6a6a6',
   navBackground: '#111a2c',
@@ -134,10 +136,10 @@ export const useTheme = () => {
 
         // Проверяем localStorage
         const savedTheme = localStorage.getItem('theme');
-        
+
         // Определяем тему
         let theme = 'light';
-        
+
         if (cookieValue) {
           theme = cookieValue;
         } else if (savedTheme) {
@@ -146,7 +148,7 @@ export const useTheme = () => {
           const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
           theme = systemPrefersDark ? 'dark' : 'light';
         }
-        
+
         const isDark = theme === 'dark';
         setIsDarkMode(isDark);
         applyThemeToBody(isDark);
@@ -178,12 +180,12 @@ export const useTheme = () => {
     if (!isLoading) {
       // Сохраняем в localStorage
       localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-      
+
       // Сохраняем в cookie
       const expiryDate = new Date();
       expiryDate.setDate(expiryDate.getDate() + 365);
       document.cookie = `theme=${isDarkMode ? 'dark' : 'light'}; path=/; expires=${expiryDate.toUTCString()}; max-age=31536000;`;
-      
+
       // Применяем к body
       applyThemeToBody(isDarkMode);
 
@@ -196,7 +198,7 @@ export const useTheme = () => {
   }, [isDarkMode, isLoading]);
 
   const toggleTheme = () => setIsDarkMode(prev => !prev);
-  
+
   return {
     isDarkMode,
     theme: isDarkMode ? darkTheme : lightTheme,

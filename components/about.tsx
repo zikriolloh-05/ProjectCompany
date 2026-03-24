@@ -81,21 +81,22 @@ const AboutPage = () => {
                     <span style={{
                         fontSize: '22px',
                         color: theme.accent,
-                        marginRight:'77%',
+                        marginRight: '77%',
                     }}>
                         {about('about')}
                     </span>
-                    <p style={{ marginRight: '100px' }} className={styles.anotherClass}/>
-                        <br />
-                        <span style={{ color: theme.accent, WebkitTextFillColor: theme.accent }}>{t('about_text2')}</span>
-                        <p style={{
-                            fontSize: '18px',
-                            opacity: 0.7,
-                            maxWidth: '600px',
-                            margin: '0 auto'
-                        }}>
-                            {t('about_text3')}
-                        </p>
+                    <p style={{ marginRight: '100px' }} className={styles.anotherClass} />
+                    {/* <br /> */}
+                    <span style={{ color: theme.accent, WebkitTextFillColor: theme.accent }}>{t('about_text2')}</span>
+                    <p className='text_about_3' style={{
+                        fontSize: '18px',
+                        opacity: 0.7,
+                        maxWidth: '600px',
+                        margin: '0 auto',
+                        color: theme.text
+                    }}>
+                        {/* {t('about_text3')} */}
+                    </p>
                 </div>
 
                 {/* Основной контент */}
@@ -130,7 +131,8 @@ const AboutPage = () => {
                                 marginBottom: '32px',
                                 opacity: isVisible ? 1 : 0,
                                 transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
-                                transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
+                                transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+                                color: theme.text
                             }}>
                                 {t('about_text')}
                             </p>
@@ -140,7 +142,8 @@ const AboutPage = () => {
                                 <h4 style={{
                                     fontSize: '20px',
                                     fontWeight: '600',
-                                    marginBottom: '20px'
+                                    marginBottom: '20px',
+                                    color: theme.text
                                 }}>
                                     {t('about_text5')}
                                 </h4>

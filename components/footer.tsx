@@ -7,7 +7,6 @@ import { useTheme } from '../components/hooks/useTheme';
 
 const Footer = () => {
     const { theme } = useTheme();
-    const t = useTranslations("HomePage");
     const navigat = useTranslations('Navigation');
     const portfol = useTranslations('PortfolioPage');
     const footer_text = useTranslations("Footer_f");
