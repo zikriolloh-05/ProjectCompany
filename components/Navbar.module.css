@@ -192,7 +192,7 @@
   border-radius: 5px;
   transform: 2s ease;
   margin-bottom: 30px;
-  margin-left: 6%;
+  margin-left: 9%;
 }
 
 .anotherClass {
@@ -266,12 +266,13 @@ body {
 
 .Div_ful_portfolio {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 30px;
-  gap: 20px;
+  gap: 0px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 91%;
+  place-self: center;
 }
 
 .imageEmail {
@@ -569,6 +570,18 @@ body {
   font-size: 18px;
 }
 
+
+
+.mobileMenuItem:hover {
+  /* background-color: rgba(0, 0, 0, 0.05); */
+}
+
+.mobileMenuItem.active {
+  /* font-weight: 600; */
+  /* width: 100%; */
+  /* background-color: rgba(24, 144, 255, 0.1) !important; */
+}
+
 @media(min-width:481px) and (max-width:768px) {
   .Bars {
     display: block;
@@ -618,6 +631,44 @@ body {
 }
 
 @media(max-width:480px) {
+
+  .mobileMenuItem:hover {
+    /* background-color: rgba(0, 0, 0, 0.05); */
+  }
+
+  .mobileMenuItem.active {
+    /* font-weight: 600; */
+  }
+
+  .mobileMenuDivider {
+    /* height: 1px; */
+    /* margin: 8px 0; */
+  }
+
+  /* .mobileMenuContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobileMenuItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* .mobileMenuItem {
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* border-bottom: 1px solid; */
+    /* font-size: 20px; */
+    /* width: 100%; */
+    /* box-sizing: border-box; */
+  /* }  */
+
   .Bars {
     display: block !important;
   }
@@ -928,7 +979,7 @@ body {
 
 .mobileMenuItem {
   padding: 16px 0;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   border-bottom: 1px solid;
   transition: all 0.3s ease;
@@ -941,61 +992,182 @@ body {
 
 .mobileMenuItem.active {
   font-weight: 600;
-  color: #1890ff;
 }
 
-.mobileMenuDivider {
-  height: 1px;
-  background: rgba(128, 128, 128, 0.2);
-  margin: 20px 0;
-}
+@media (max-width: 480px) {
+  /* Общие исправления для about_page */
+  .about_page {
+    padding: 60px 16px !important;
+    min-height: auto !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-.mobileMenuLanguage h4,
-.mobileMenuTheme h4 {
-  margin-bottom: 12px;
-  font-size: 16px;
-  opacity: 0.8;
-}
+  .about_container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+  }
 
-.mobileLanguageOptions {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
+  /* Исправление для основного контента */
+  .about_page > div > div:first-child {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
-.mobileLanguageOption {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
+  /* Левая колонка - описание компании */
+  .divAboutTheCampany {
+    width: 100% !important;
+    transform: none !important;
+    padding: 24px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
 
-.mobileLanguageOption:hover {
-  background: rgba(128, 128, 128, 0.1);
-}
+  /* Заголовок "О компании" */
+  .divAboutTheCampany h3 {
+    font-size: 24px !important;
+    margin-bottom: 16px !important;
+    word-break: break-word !important;
+  }
 
-.mobileLanguageOption.active {
-  background: rgba(24, 144, 255, 0.1);
-  color: #1890ff;
-}
+  /* Текст описания */
+  .divAboutTheCampany p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    word-break: break-word !important;
+  }
 
-.mobileThemeButton {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
+  /* Блок преимуществ */
+  .divAboutTheCampany > div {
+    margin-top: 24px !important;
+  }
 
-.mobileThemeButton:hover {
-  transform: translateX(5px);
+  /* Преимущества - список */
+  .divAboutTheCampany > div > div {
+    width: 100% !important;
+  }
+
+  /* Каждый пункт преимущества */
+  .divAboutTheCampany > div > div > div {
+    width: 100% !important;
+    flex-wrap: wrap !important;
+  }
+
+  /* Правая колонка - статистика */
+  .about_page > div > div:first-child > div:last-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Контейнер с 4 карточками статистики */
+  .about_page > div > div:first-child > div:last-child > div:first-child {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+  }
+
+  /* Каждая карточка статистики */
+  .about_page > div > div:first-child > div:last-child > div:first-child > div {
+    padding: 24px 12px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Иконка в карточке */
+  .about_page > div > div:first-child > div:last-child > div:first-child > div > div:first-child {
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 auto 16px auto !important;
+  }
+
+  /* Цифры в статистике */
+  .about_page > div > div:first-child > div:last-child > div:first-child > div > div:nth-child(2) {
+    font-size: 28px !important;
+    margin-bottom: 4px !important;
+  }
+
+  /* Текст под цифрами */
+  .about_page > div > div:first-child > div:last-child > div:first-child > div > div:last-child {
+    font-size: 12px !important;
+    word-break: break-word !important;
+  }
+
+  /* Блок миссии */
+  .about_page > div > div:first-child > div:last-child > div:last-child {
+    padding: 24px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Текст миссии */
+  .about_page > div > div:first-child > div:last-child > div:last-child p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    word-break: break-word !important;
+  }
+
+  /* Блок с иконкой миссии */
+  .about_page > div > div:first-child > div:last-child > div:last-child > div {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Заголовок "О нас" */
+  .about_page > div > div:first-child > div:first-child > span:first-of-type {
+    margin-right: 0 !important;
+    font-size: 18px !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+  }
+
+  /* Подзаголовок */
+  .about_page > div > div:first-child > div:first-child > span:nth-child(2) {
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+
+  /* Текст под заголовком */
+  .about_page > div > div:first-child > div:first-child > p {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+
+  /* Исправление для всех изображений и иконок */
+  .about_page svg,
+  .about_page img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Убираем возможные overflow */
+  body {
+    overflow-x: hidden !important;
+  }
+
+  /* Исправление для текста на карточках */
+  .about_page > div > div:first-child > div:last-child > div:first-child > div > div:last-child {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+  }
 }
 
 /* Медиа-запросы */
@@ -1028,6 +1200,11 @@ body {
     position: relative;
     z-index: 2;
     height: auto;
+  }
+
+  .divAboutTheCampany{
+    width: 120%;
+    transform: translate(-29px);
   }
 
   .nav {

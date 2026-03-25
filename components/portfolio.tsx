@@ -120,8 +120,8 @@ const Portfolio = ({ customTitle }: PortfolioProps) => {
                         fontSize: '22px',
                         fontWeight: '600',
                         marginTop: '50px',
-                        marginLeft: "7%",
-                        marginBottom: '20px',
+                        marginLeft: "10%",
+                        marginBottom: '0px',
                         opacity: titleVisible ? 1 : 0,
                         transform: titleVisible ? 'translateY(0)' : 'translateY(30px)',
                         transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)'

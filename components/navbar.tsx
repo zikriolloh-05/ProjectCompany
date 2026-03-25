@@ -333,46 +333,80 @@ const Navbar = ({ locale }: { locale: string }) => {
         </div>
       </nav>
       <Drawer
-        title="Menu"
+        title="IT Support"
         placement={placement}
         onClose={() => setOpen(false)}
         open={open}
-        styles={{
+        closeIcon={false} // Отключаем стандартную иконку
+        extra={
+          <span
+            onClick={() => setOpen(false)}
+            style={{
+              color: isDarkMode ? '#ffffff' : '#000000',
+              fontSize: '20px',
+              cursor: 'pointer',
+              position: 'absolute',
+              right: '16px',
+              top: '16px'
+            }}
+          >
+            ✕
+          </span>
+        } styles={{
           body: {
             padding: 0,
-            backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff'
+            margin: 0,
+            backgroundColor: isDarkMode ? theme.background : '#ffffff',
+            color: isDarkMode ? theme.navText : '#000000',
           },
           header: {
-            backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff',
-            borderBottom: `1px solid ${isDarkMode ? '#333' : '#f0f0f0'}`
+            backgroundColor: isDarkMode ? theme.background : '#ffffff',
+            borderBottom: `1px solid ${isDarkMode ? '#333' : '#f0f0f0'}`,
+            color: isDarkMode ? theme.navText : '#000000',
+            // padding:0,
           },
-          // headerTitle: {
-          //   color: getTextColor()
-          // },
-          // closeIcon: {
-          //   color: getTextColor()
-          // }
+          mask: {
+            backgroundColor: 'rgba(0, 0, 0, 0.45)',
+          },
+          content: {
+            backgroundColor: isDarkMode ? theme.background : '#ffffff',
+          },
+          wrapper: {
+            width: '100%',
+          },
+        }}
+        classNames={{
+          header: styles.drawerHeader,
+          body: styles.drawerBody,
         }}
       >
         <div className={styles.mobileMenuContainer}>
           <div className={styles.mobileMenuItems}>
-            {navItems.map((item) => (
-              <div
-                key={item.key}
-                className={`${styles.mobileMenuItem} ${activeSection === item.key ? styles.active : ''}`}
-                onClick={() => handleNavigation(item.id, item.key, item.isPage)}
-                style={{
-                  color: getTextColor(),
-                  borderBottomColor: theme.background
-                }}
-              >
-                {item.label}
-              </div>
-            ))}
+            {navItems.map((item) => {
+              // Проверяем активность пункта
+              const isActive = activeSection === item.key;
+
+              return (
+                <div
+                  key={item.key}
+                  className={`${styles.mobileMenuItem} ${isActive ? styles.active : ''}`}
+                  onClick={() => handleNavigation(item.id, item.key, item.isPage)}
+                  style={{
+                    color: isActive
+                      ? (isDarkMode ? theme.accent : '#1890ff')  // Активный пункт - синий или цвет акцента
+                      : (isDarkMode ? theme.navText : '#000000'), // Неактивный пункт - белый на темной теме, черный на светлой
+                    borderBottomColor: theme.accent,
+                    fontWeight: isActive ? 600 : 400,
+                    // width: '100%',
+                    // display: 'block'
+                  }}
+                >
+                  {item.label}
+                </div>
+              );
+            })}
 
             <div className={styles.mobileMenuDivider} />
-
-
           </div>
         </div>
       </Drawer>

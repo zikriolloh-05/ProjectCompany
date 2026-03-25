@@ -81,9 +81,9 @@ const Contact = () => {
                         borderRadius: '50px',
                         fontSize: '22px',
                         fontWeight: '600',
-                        marginLeft: "7%",
+                        marginLeft: "10%",
                         marginTop: '50px',
-                        marginBottom: '20px',
+                        marginBottom: '0px',
                         opacity: titleVisible ? 1 : 0,
                         transform: titleVisible ? 'translateY(0)' : 'translateY(30px)',
                         transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)'

@@ -74,7 +74,6 @@ const AboutPage = () => {
 
             }}
         >
-
             <div className={styles.about_container}>
                 {/* Заголовок секции */}
                 <div style={{ marginBottom: '60px' }}>
@@ -95,7 +94,7 @@ const AboutPage = () => {
                         margin: '0 auto',
                         color: theme.text
                     }}>
-                        {/* {t('about_text3')} */}
+                        {t('about_text3')}
                     </p>
                 </div>
 
@@ -110,7 +109,7 @@ const AboutPage = () => {
                 }}>
                     {/* Левая колонка - описание */}
                     <div>
-                        <div style={{
+                        <div className={styles.divAboutTheCampany} style={{
                             background: theme.cardBackground,
                             borderRadius: '24px',
                             padding: '40px',
