@@ -50,7 +50,7 @@ const Home = () => {
                 [field]: false
             }));
         }
-    },[]);
+    }, []);
 
     const handleCancel = () => {
         // Сбрасываем ошибки
@@ -144,7 +144,7 @@ const Home = () => {
 
     return (
         <>
-            <header  id="home-section" className={styles.home_container}>
+            <header id="home-section" className={styles.home_container}>
                 <div className={styles.typewriter_container}>
                     <video
                         autoPlay
@@ -157,11 +157,11 @@ const Home = () => {
                     </video>
                 </div>
 
-                <div>
+                {/* <div>
                     <p className={styles.DescriptionHome}>
                         {t('description')}
                     </p>
-                </div>
+                </div> */}
 
                 <Button
                     onClick={showModal}

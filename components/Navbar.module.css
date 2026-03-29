@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 70px;
+  min-height: 60px;
   justify-content: space-between;
   align-items: center;
   padding: 0 130px;
@@ -1217,5 +1217,120 @@ body {
 
   .languageButton span {
     display: none;
+  }
+}
+
+/* Стили кнопок */
+.divImagePortfolio button {
+  padding: 10px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.divImagePortfolio:hover button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.divImagePortfolio:hover button:first-child {
+  transition-delay: 0.1s;
+}
+
+.divImagePortfolio:hover button:last-child {
+  transition-delay: 0.2s;
+}
+
+.divImagePortfolio button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ============================================ */
+/* МОБИЛЬНАЯ ВЕРСИЯ (до 768px) */
+/* ============================================ */
+
+@media (max-width: 768px) {
+  .Div_ful_portfolio {
+    width: 100%;
+    gap: 25px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .divImagePortfolio {
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+  }
+}
+
+/* МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) */
+@media (max-width: 480px) {
+  .PortfolioPage {
+    padding: 60px 16px !important;
+  }
+
+  .Div_ful_portfolio {
+    width: 100%;
+    gap: 25px;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .divImagePortfolio {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  /* Кнопки на мобильных */
+  .divImagePortfolio button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .divImagePortfolio > div {
+    gap: 10px;
+    bottom: 15px;
+  }
+
+  /* Заголовок и линия на мобильных */
+  .dotss {
+    width: 200px;
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .PortfolioPage h2 {
+    margin-left: 0 !important;
+    font-size: 20px !important;
+  }
+}
+
+/* ПЛАНШЕТЫ (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .Div_ful_portfolio {
+    width: 100%;
+    gap: 25px;
+  }
+
+  .divImagePortfolio {
+    width: calc(50% - 12.5px);
+    min-width: 200px;
+  }
+
+  .divImagePortfolio button {
+    padding: 8px 16px;
+    font-size: 12px;
   }
 }
